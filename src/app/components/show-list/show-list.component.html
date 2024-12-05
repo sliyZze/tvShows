@@ -1,0 +1,13 @@
+<table class="table table-striped table-hover">
+  <thead>
+  <tr> <th>Id</th> <th>Serientitel</th> </tr>
+  </thead>
+  <tbody>
+    <tr>
+      @for (s of shows; track s.id){
+        <td>{{s.id}}</td>
+        <td>{{s.title}}</td>
+      }
+    </tr>
+  </tbody>
+</table>
